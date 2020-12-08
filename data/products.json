@@ -1,0 +1,378 @@
+{
+    "Refresco Cola": {
+        "Aport": "1",
+        "Brand": "TuKola",
+        "Name": "Refresco Cola",
+        "Price": "12.5",
+        "ProductId": "1",
+        "Size": "350"
+    },
+    "Vino tinto": {
+        "Aport": "1",
+        "Brand": "Campo Alegre",
+        "Name": "Vino tinto",
+        "Price": "96.25",
+        "ProductId": "2",
+        "Size": "1000"
+    },
+    "Ron blanco": {
+        "Aport": "1",
+        "Brand": "Havana Club",
+        "Name": "Ron blanco",
+        "Price": "96.25",
+        "ProductId": "3",
+        "Size": "700"
+    },
+    "Vodka": {
+        "Aport": "1",
+        "Brand": "Regenta",
+        "Name": "Vodka",
+        "Price": "75",
+        "ProductId": "4",
+        "Size": "1000"
+    },
+    "Ginebra": {
+        "Aport": "1",
+        "Brand": "Contessa",
+        "Name": "Ginebra",
+        "Price": "160",
+        "ProductId": "5",
+        "Size": "750"
+    },
+    "Agua Tonica": {
+        "Aport": "1",
+        "Brand": "Ciego Montero",
+        "Name": "Agua Tonica",
+        "Price": "10",
+        "ProductId": "6",
+        "Size": "330"
+    },
+    "Cerveza": {
+        "Aport": "1",
+        "Brand": "Cristal",
+        "Name": "Cerveza",
+        "Price": "25",
+        "ProductId": "7",
+        "Size": "350"
+    },
+    "Jugo de limon": {
+        "Aport": "1",
+        "Brand": "Del Real",
+        "Name": "Jugo de limon",
+        "Price": "12.5",
+        "ProductId": "8",
+        "Size": "200"
+    },
+    "Zumo Naranja": {
+        "Aport": "1",
+        "Brand": "La Estancia",
+        "Name": "Zumo Naranja",
+        "Price": "55",
+        "ProductId": "10",
+        "Size": "1000"
+    },
+    "Salsa inglesa": {
+        "Aport": "1",
+        "Brand": "La Dona",
+        "Name": "Salsa inglesa",
+        "Price": "30",
+        "ProductId": "11",
+        "Size": "163"
+    },
+    "Aguardiente": {
+        "Aport": "1",
+        "Brand": "Santero",
+        "Name": "Aguardiente",
+        "Price": "68.75",
+        "ProductId": "14",
+        "Size": "500"
+    },
+    "Salsa Tabasco": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Salsa Tabasco",
+        "Price": "153.75",
+        "ProductId": "15",
+        "Size": "60"
+    },
+    "Azucar": {
+        "Aport": "1",
+        "Brand": "Buen dia",
+        "Name": "Azucar",
+        "Price": "45",
+        "ProductId": "16",
+        "Size": "130"
+    },
+    "Hierbabuena": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Hierbabuena",
+        "Price": "",
+        "ProductId": "17",
+        "Size": ""
+    },
+    "Agua Mineral Carbonatada": {
+        "Aport": "1",
+        "Brand": "Ciego Montero",
+        "Name": "Agua Mineral Carbonatada",
+        "Price": "10",
+        "ProductId": "18",
+        "Size": "300"
+    },
+    "Limon": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Limon",
+        "Price": "2",
+        "ProductId": "20",
+        "Size": "1"
+    },
+    "Sal": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Sal",
+        "Price": "12",
+        "ProductId": "21",
+        "Size": "1000"
+    },
+    "Jugo de Tomate": {
+        "Aport": "1",
+        "Brand": "La Conchita",
+        "Name": "Jugo de Tomate",
+        "Price": "17.5",
+        "ProductId": "22",
+        "Size": "200"
+    },
+    "Zumo de Pina": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Zumo de Pina",
+        "Price": "70",
+        "ProductId": "23",
+        "Size": "1000"
+    },
+    "Licor de Marrasquino": {
+        "Aport": "1",
+        "Brand": "Cubay",
+        "Name": "Licor de Marrasquino",
+        "Price": "77.5",
+        "ProductId": "24",
+        "Size": "700"
+    },
+    "Licor de Granadina": {
+        "Aport": "1",
+        "Brand": "Cubay",
+        "Name": "Licor de Granadina",
+        "Price": "77.5",
+        "ProductId": "25",
+        "Size": "700"
+    },
+    "Whisky Bourbon": {
+        "Aport": "1",
+        "Brand": "Buffalo Bill",
+        "Name": "Whisky Bourbon",
+        "Price": "382.5",
+        "ProductId": "26",
+        "Size": "700"
+    },
+    "Tequila": {
+        "Aport": "1",
+        "Brand": "Rio Club",
+        "Name": "Tequila",
+        "Price": "205",
+        "ProductId": "29",
+        "Size": "700"
+    },
+    "Angostura": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Angostura",
+        "Price": "316.25",
+        "ProductId": "30",
+        "Size": "200"
+    },
+    "Licor de Melocoton": {
+        "Aport": "1",
+        "Brand": "Spar",
+        "Name": "Licor de Melocoton",
+        "Price": "276.25",
+        "ProductId": "34",
+        "Size": "700"
+    },
+    "Cointreau": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Cointreau",
+        "Price": "1217.5",
+        "ProductId": "35",
+        "Size": "750"
+    },
+    "Miel de abeja": {
+        "Aport": "1",
+        "Brand": "Apisun",
+        "Name": "Miel de abeja",
+        "Price": "22.5",
+        "ProductId": "36",
+        "Size": "250"
+    },
+    "Vermouth Rojo": {
+        "Aport": "1",
+        "Brand": "Olave",
+        "Name": "Vermouth Rojo",
+        "Price": "321.25",
+        "ProductId": "38",
+        "Size": "750"
+    },
+    "Jugo de Pina": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Jugo de Pina",
+        "Price": "15",
+        "ProductId": "39",
+        "Size": "1000"
+    },
+    "Crema de Coco": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Crema de Coco",
+        "Price": "155",
+        "ProductId": "40",
+        "Size": "500"
+    },
+    "Pina": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Pina",
+        "Price": "",
+        "ProductId": "42",
+        "Size": ""
+    },
+    "Cereza": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Cereza",
+        "Price": "",
+        "ProductId": "43",
+        "Size": ""
+    },
+    "Melocoton": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Melocoton",
+        "Price": "",
+        "ProductId": "44",
+        "Size": ""
+    },
+    "Naranja": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Naranja",
+        "Price": "",
+        "ProductId": "45",
+        "Size": ""
+    },
+    "Manzana": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Manzana",
+        "Price": "",
+        "ProductId": "46",
+        "Size": ""
+    },
+    "Platano": {
+        "Aport": "0",
+        "Brand": "",
+        "Name": "Platano",
+        "Price": "",
+        "ProductId": "47",
+        "Size": ""
+    },
+    "Chile en polvo(Pimenton Picante)": {
+        "Aport": "1",
+        "Brand": "La Barraca",
+        "Name": "Chile en polvo(Pimenton Picante)",
+        "Price": "28.75",
+        "ProductId": "48",
+        "Size": "25"
+    },
+    "Salsa de Soja": {
+        "Aport": "1",
+        "Brand": "Kikkoman",
+        "Name": "Salsa de Soja",
+        "Price": "256.25",
+        "ProductId": "49",
+        "Size": "150"
+    },
+    "Pimienta Negra": {
+        "Aport": "1",
+        "Brand": "La Barraca",
+        "Name": "Pimienta Negra",
+        "Price": "41.25",
+        "ProductId": "50",
+        "Size": "25"
+    },
+    "Campari": {
+        "Aport": "1",
+        "Brand": "",
+        "Name": "Campari",
+        "Price": "681.25",
+        "ProductId": "51",
+        "Size": "1000"
+    },
+    "Vermouth Seco": {
+        "Aport": "1",
+        "Brand": "Cinzano",
+        "Name": "Vermouth Seco",
+        "Price": "355",
+        "ProductId": "52",
+        "Size": "750"
+    },
+    "Aceitunas": {
+        "Aport": "1",
+        "Brand": "Spar",
+        "Name": "Aceitunas",
+        "Price": "12.5",
+        "ProductId": "53",
+        "Size": "180"
+    },
+    "Brandy": {
+        "Aport": "1",
+        "Brand": "Spirit",
+        "Name": "Brandy",
+        "Price": "210",
+        "ProductId": "54",
+        "Size": "700"
+    },
+    "Licor de Cacao": {
+        "Aport": "1",
+        "Brand": "Cubay",
+        "Name": "Licor de Cacao",
+        "Price": "77.5",
+        "ProductId": "55",
+        "Size": "700"
+    },
+    "Nata liquida (Crema de Leche)": {
+        "Aport": "1",
+        "Brand": "Nestle",
+        "Name": "Nata liquida (Crema de Leche)",
+        "Price": "48.75",
+        "ProductId": "56",
+        "Size": "225"
+    },
+    "Nuez moscada": {
+        "Aport": "1",
+        "Brand": "Spar",
+        "Name": "Nuez moscada",
+        "Price": "37.5",
+        "ProductId": "57",
+        "Size": "16"
+    },
+    "Ron oscuro": {
+        "Aport": "1",
+        "Brand": "Havana Club",
+        "Name": "Ron oscuro",
+        "Price": "111.25",
+        "ProductId": "58",
+        "Size": "500"
+    }
+}

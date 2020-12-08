@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/Chart.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="css/Chart.min.css">
+    </link>
+
+    <!-- Required -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!-- Optional -->
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="css/duallistbox.min.css" />
+    <link rel="stylesheet" href="css/duallistbox.css" />
+
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+
+
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <h1>Prepara tu<span class="typer" id="some-id" data-delay="100" data-delim=":" data-words=" Mojito: Cubalibre: Daiquirí: Piña Colada: Sangría: Gintonic: Caipirinha: Cubata: 
+                                    Screwdriver: Ron Collins: Caipiroska: Cubanito: Michelada:
+                                     Margarita: Bloody Mary: Havana Special: Vodkatonic: Tequila Sunrise: 
+                                    Martini: Caipirissima: Mary Pickford: Tom Collins: Canchánchara: Manhattan: 
+                                    Negroni: Old Fashioned: Sex On The Beach: Alexander: President: Chelada"
+                                    data-colors="red"></span><span class="cursor" data-cursorDisplay="_"
+                                    data-owner="some-id"></span></h1>
+                            <h2>en casa </h2>
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+    <div id="about" class="pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> -->
+                <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <p>Desde el pasado mes de marzo en Cuba se combate arduamente contra el virus Covid-19.
+                        A pesar de los esfuerzos y avances en la medicina para frenar tan contagiosa enfermedad,
+                        aún en el mes de diciembre el mundo sufre por este y la isla no está exenta de ello.
+                        Debido a la situación la dirección del país ha tomado un conjunto de medidas para
+                        proteger a sus ciudadanos dentro de las cuales figura el cierre total de los bares.</p>
+
+                    <p> Es importante entender la necesidad de medidas como estas, debido a la gran concentración
+                        de personas que se mueve en este ambiente; pero de igual modo ello no significa que se
+                        deba privar de disfrutar, desde casa y por obra propia, una excelente bebida con
+                        los ingredientes que se tengan a mano. </p>
+
+                    <p> Partiendo de la recopilación de los tragos disponibles en más de 50 bares de la provincia
+                        La Habana, se han seleccionado 30, de los que parecen ser los más frecuentes, como se
+                        muestran
+                        en la siguiente gráfica. </p>
+                </div>
+                <!-- </div> -->
+                <!-- end col -->
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="images/special_menu_bg.jpg" alt="About Main Image">
+                            <img class="about-inset" src="images/newsletter-bg.jpg" alt="About Inset Image">
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end col -->
+            </div>
+            <div class="row">
+                <canvas id="bar-chart" width="400" height="300">
+                </canvas>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <p>Como se puede analizar el trago mas común es el famoso Mojito cuya primera versión vio la luz,
+                    según la leyenda, a finales del siglo XVI por el corsario Sir Francis Drake, donde se mezclaba
+                    aguardiente de mala calidad, azúcar, limón y menta. Usada en los tiempos de la piratería para
+                    combatir
+                    males estomacales, prevenir el cólera y aliviar el intenso calor. Ya en el siglo XIX se mejoró la
+                    producción
+                    de ron y siendo más refinado se cambia por uno de mejor calidad. Al mojito se le atribuye un origen
+                    cubano
+                    ya que es en la mayor de Las Antillas donde alcanza su madurez y esplendor.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+
+                        <p> Otros tragos de origen cubano son: Cubalibre, Daiquirí, Canchánchara, Cubata, Cubanito,
+                            Presidente, Mary Pickford
+                            y Havana Special; siendo la mayoría, al igual que el mojito, preparados con ron blanco. Vale
+                            destacar que aunque
+                            muchos medios atribuyen a la Piña Colada un origen cubano, e incluso es preparada con
+                            nuestro ron, proviene de
+                            San Juan, Puerto Rico, por los años 50. </p>
+                        <p> El porciento de tragos por bebida base se muestra en la siguiente gráfica de pastel.</p>
+                        <p>Se aprecia que el ron obtiene el mayor porciento, lo cual es totalmente lógico debido a que
+                            es un producto nacional.
+                            Le siguen en la lista el Vodka y el Ginebra, la mayoría de los tragos que poseen estos
+                            productos estánn
+                            dentro de los 20 primeros.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <canvas id="doughnut-chart" width="200" height="150"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+                            ¿Qué tienes en casa?
+                        </h2>
+                        <p class="title-caption text-center">Selecciona con un click los productos que tienes en casa y
+                            verás qué tragos se pueden
+                            preparar con estos. Los productos en la lista son los necesarios para elaborar los 30 tragos
+                            escogidos. </p>
+                    </div>
+                    <div class="tab-menu">
+                        <div class="slider slider-nav">
+                            <div class="tab-title-menu">
+                                <h2>Ingredientes</h2>
+                                <!-- <p> <i class="flaticon-canape"></i> </p> -->
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>Todos</h2>
+                                <!-- <p> <i class="flaticon-dinner"></i> </p> -->
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>Algunos</h2>
+                                <!-- <p> <i class="flaticon-desert"></i> </p> -->
+                            </div>
+                            <!-- <div class="tab-title-menu">
+                                <h2>DRINKS</h2>
+                                <p> <i class="flaticon-coffee"></i> </p>
+                            </div> -->
+                        </div>
+                        <div class="slider slider-single">
+                            <div>
+                                <div class="container">
+                                    <select name="countries[]" id="test" multiple onchange=getValues()>
+                                        <option value="Refresco Cola">Refresco Cola</option>
+                                        <option value="Vino tinto">Vino tinto</option>
+                                        <option value="Ron blanco">Ron blanco</option>
+                                        <option value="Vodka">Vodka</option>
+                                        <option value="Ginebra">Ginebra</option>
+                                        <option value="Agua Tónica">Agua Tónica</option>
+                                        <option value="Cerveza">Cerveza</option>
+                                        <option value="Jugo de limón">Jugo de limón</option>
+                                        <option value="Zumo Naranja">Zumo Naranja</option>
+                                        <option value="Salsa inglesa">Salsa inglesa</option>
+                                        <option value="Aguardiente">Aguardiente</option>
+                                        <option value="Salsa Tabasco">Salsa Tabasco</option>
+                                        <option value="Azúcar">Azúcar</option>
+                                        <option value="Hierbabuena">Hierbabuena</option>
+                                        <option value="Agua Mineral Carbonatada">Agua Mineral Carbonatada</option>
+                                        <option value="Limón">Limón</option>
+                                        <option value="Sal">Sal</option>
+                                        <option value="Jugo de Tomate">Jugo de Tomate</option>
+                                        <option value="Zumo de Pina">Zumo de Pina</option>
+                                        <option value="Licor de Marrasquino">Licor de Marrasquino</option>
+                                        <option value="Licor de Granadina">Licor de Granadina</option>
+                                        <option value="Whisky Bourbon">Whisky Bourbon</option>
+                                        <option value="Tequila">Tequila</option>
+                                        <option value="Angostura">Angostura</option>
+                                        <option value="Licor de Melocoton">Licor de Melocotón</option>
+                                        <option value="Cointreau">Cointreau</option>
+                                        <option value="Miel de abeja">Miel de abeja</option>
+                                        <option value="Vermouth Rojo">Vermouth Rojo</option>
+                                        <option value="Jugo de Piña">Jugo de Piña</option>
+                                        <option value="Crema de Coco">Crema de Coco</option>
+                                        <option value="Piña">Piña</option>
+                                        <option value="Cereza">Cereza</option>
+                                        <option value="Melocotón">Melocoton</option>
+                                        <option value="Naranja">Naranja</option>
+                                        <option value="Manzana">Manzana</option>
+                                        <option value="Plátano">Plátano</option>
+                                        <option value="Chile en polvo(Pimentón Picante)">Chile en polvo(Pimentón
+                                            Picante)</option>
+                                        <option value="Salsa de Soja">Salsa de Soja</option>
+                                        <option value="Pimienta Negra">Pimienta Negra</option>
+                                        <option value="Campari">Campari</option>
+                                        <option value="Vermouth Seco">Vermouth Seco</option>
+                                        <option value="Aceitunas">Aceitunas</option>
+                                        <option value="Brandy">Brandy</option>
+                                        <option value="Licor de Cacao">Licor de Cacao</option>
+                                        <option value="Nata líquida (Crema de Leche)">Nata líquida (Crema de Leche)
+                                        </option>
+                                        <option value="Nuez moscada">Nuez moscada</option>
+                                        <option value="Ron oscuro">Ron oscuro</option>
+                                    </select>
+                                    <div class="bg-dark text-white mt-5 rounded p-3">
+                                        Selección : <span id="values"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="all">
+
+
+                            </div>
+                            <div id="some">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end tab-menu -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end menu -->
+    <div class="special-menu pad-top-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> ¿Buscas alguno en especial? </h2>
+                        <h5 class="title-caption text-center"> En esta galería encontrarás los tragos escogidos con sus
+                            ingredientes, así como los precios en moneda nacional de los mismos</h5>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MOJITO
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Mojito_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Mojito.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CUBALIBRE
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Cubalibre_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Cubalibre.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            DAIQUIRI
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Daiquiri_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Daiquiri.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            PIÑA COLADA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Pinacolada_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Pina Colada.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            SANGRÍA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Sangria_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Sangria.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            GINTONIC
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Gintonic_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Gintonic.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CAIPIRIÑA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Caipirinha_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Caipirinha.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CUBATA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Cubata_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Cubata.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            SCREWDRIVER
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Screwdriver_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Screwdriver.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            RON COLLINS
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Roncollins_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Ron Collins.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CAIPIROSKA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Caipiroska_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Caipiroska.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CUBANITO
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Cubanito_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Cubanito.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MICHELADA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Michelada_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Michelada.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MARGARITA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Margarita_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Margarita.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            BLOODY MARY
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Bloodymary_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Bloody Mary.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            HAVANA SPECIAL
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Havanaspecial_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Havana Special.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            VODKATONIC
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Vodcatonic_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Vodkatonic.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            TEQUILA SUNRISE
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Tequilasunrise_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Tequila Sunrise.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MARTINI
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Martini_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Martini.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CAIPIRISSIMA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Caipirissima_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Caipirissima.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MARY PICKFORD
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Marypickford_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Mary Pickford.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            TOM COLLINS
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Tomcollins_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Tom Collins.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CANCHANCHARA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Canchanchara_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Canchanchara.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            MANHATTAN
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Manhattan_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Manhattan.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            NEGRONI
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Negroni_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Negroni.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            OLD FASHIONED
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Oldfashioned_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Old Fashioned.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            SEX ON THE BEACH
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Sexonthebeach_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Sex On The Beach.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            ALEXANDER
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Alexander_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Alexander.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            PRESIDENT
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Presidente_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/President.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CHELADA
+                                            <div class="line"></div>
+                                            <div class="dit-line" id="Chelada_i"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/cocktails/Chelada.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end special-box -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end special-menu -->
+    <div id="about" class="pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>Teniendo cada ingrediente con su precio es muy sencillo calcular
+                        el costo total de un trago; pero que tal si se quisiera saber el precio
+                        neto de un trago? Tomando la cantidad necesaria de cada ingrediente y dividiendo
+                        el precio por la parte que esta cantidad significa del todo se tiene este valor.</p>
+                    <p>A continuación se puede escoger un trago y se mostraran los valores de precios totales y netos.
+                        Además se muestra una gráfica donde se apreacian los valores mínimo, máximo y promedio en los
+                        que
+                        se venden estos tragos en los bares seleccionados.</p>
+                    <select id="select_cocktail" class="btn" onchange=plot_prices(this)>
+                        <option value="">Seleccionar</option>
+                        <option value="Mojito" id="1">Mojito</option>
+                        <option value="Sangria" id="2">Sangría</option>
+                        <option value="Cubalibre" id="3">Cubalibre</option>
+                        <option value="Daiquiri" id="4">Daiquirí</option>
+                        <option value="Pina Colada" id="5">Piña Colada</option>
+                        <option value="Ron Collins" id="6">Ron Collins</option>
+                        <option value="Tom Collins" id="7">Tom Collins</option>
+                        <option value="Screwdriver" id="8">Screwdriver</option>
+                        <option value="Caipirinha" id="9">Caipirinha</option>
+                        <option value="Caipiroska" id="10">Caipiroska</option>
+                        <option value="Caipirissima" id="11">Caipirissima</option>
+                        <option value="Canchanchara" id="12">Canchanchara</option>
+                        <option value="Gintonic" id="13">Gintonic</option>
+                        <option value="Cubata" id="14">Cubata</option>
+                        <option value="Cubanito" id="15">Cubanito</option>
+                        <option value="Chelada" id="16">Chelada</option>
+                        <option value="Michelada" id="17">Michelada</option>
+                        <option value="Bloody Mary" id="18">Bloody Mary</option>
+                        <option value="Margarita" id="19">Margarita</option>
+                        <option value="Manhattan" id="20">Manhattan</option>
+                        <option value="Vodkatonic" id="21">Vodkatonic</option>
+                        <option value="Negroni" id="22">Negroni</option>
+                        <option value="Old Fashioned" id="23">Old Fashioned</option>
+                        <option value="President" id="24">President</option>
+                        <option value="Mary Pickford" id="25">Mary Pickford</option>
+                        <option value="Tequila Sunrise" id="26">Tequila Sunrise</option>
+                        <option value="Martini" id="27">Martini</option>
+                        <option value="Sex On The Beach" id="28">Sex On The Beach</option>
+                        <option value="Havana Special" id="29">Havana Special</option>
+                        <option value="Alexander" id="30">Alexander</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Precio total:</h4>
+                    <p id="precio_total"></p>
+                    <h4>Precio neto:</h4>
+                    <p id="precio_neto"></p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <canvas id="line-chart" width="200" height="150"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <p>La inmensa diferencia dentro del precio neto y el precio promedio en un bar puede causar asombro.
+                    Para entender
+                    esto es necesario considerar que el precio no solo depende de los ingredientes, sino tambien de la
+                    calidad del local,
+                    de si la musica es en vivo o grabada, de la cantidad de bebida que sirvan, de otras disponibilidades
+                    que ofrezcan en el sitio, entre otras cuestiones </p>
+            </div>
+            <hr>
+            <div class="row">
+                <p>El proceso de realizar el presente trabajo comenzó con la recopilación de
+                    los datos necesarios para llevar a cabo el estudio. Para esta tarea nos
+                    apoyamos en la información que brinda A la mesa y Conoce Cuba, donde se
+                    realizó una selección de 57 locales de La Habana que oferten cocteles.
+                    Las recetas usadas son, en su mayoría, tomadas de Ecured pues se considera
+                    que ofrece una aproximación más cercana al contexto cubano. Los precios de
+                    cada producto requerido para la preparación de los cocteles fueron determinados
+                    haciendo uso de Dónde hay. Luego de recopilar toda esta información se conformó
+                    una base de datos sqlite con la misma. Los gráficos mostrados fueron realizados
+                    usando la herramienta chart.js</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                        <p>Desde casa cuidamos nuestra salud, ahorramos dinero, desarrollamos nuestra creatividad y por
+                            qué no, NOS DIVERTIMOS!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+
+
+        </div>
+        <!-- <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    target="_blank"></a> </h6>
+                        </div>
+                     </div> -->
+        <!-- end row -->
+        <!-- </div> -->
+        <!-- end container -->
+        <!-- </div> -->
+        <!-- end copyright-main -->
+    </div>
+    <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/data.js"></script>
+
+    <script src="js/duallistbox.js"></script>
+
+    <script type="text/javascript">
+        // Bar chart
+        new Chart(document.getElementById("bar-chart"), {
+            type: 'horizontalBar',
+            data: {
+                labels: ['Mojito', 'Cubalibre', 'Daiquirí', 'Piña Colada', 'Sangría', 'Gintonic', 'Caipirinha',
+                    'Cubata', 'Screwdriver', 'Ron Collins', 'Caipiroska', 'Cubanito', 'Michelada',
+                    'Margarita', 'Bloody Mary', 'Havana Special', 'Vodkatonic', 'Tequila Sunrise',
+                    'Martini', 'Caipirissima', 'Mary Pickford', 'Tom Collins', 'Canchánchara', 'Manhattan',
+                    'Negroni', 'Old Fashioned', 'Sex On The Beach', 'Alexander', 'President', 'Chelada',
+                    'Limonada Clarete', 'Orgasm', 'Cosmopolitan', 'Tintoverano', 'White Russian', 'Mulata',
+                    'Summer Red Wine', 'Long Island', 'Whisky Sour', 'Dry Martini and Blue',
+                    'Black Russian', 'B52', 'Blue Lagoon', 'American', 'Mimosa', 'Cuba Bella', 'Mai Tai',
+                    'Goodfather', 'Phil Collins', 'Sidecar', 'Campari Orange', 'Rontonic', 'Cnc', 'Aviation'
+                ],
+                datasets: [{
+                    label: "Frecuencia",
+                    // backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    backgroundColor: ['#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd',
+                        '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd',
+                        '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd',
+                        '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd', '#3e95cd',
+                        '#3e95cd', '#3e95cd', '#3e95cd', '#c45850', '#c45850', '#c45850', '#c45850',
+                        '#c45850', '#c45850', '#c45850', '#c45850', '#c45850', '#c45850', '#c45850',
+                        '#c45850', '#c45850', '#c45850', '#c45850', '#c45850', '#c45850', '#c45850',
+                        '#c45850', '#c45850', '#c45850', '#c45850', '#c45850', '#c45850'
+                    ],
+                    data: [57, 54, 53, 53, 48, 47, 45, 45, 44, 42, 40, 37, 30, 30, 29, 24, 23, 19, 19,
+                        17, 16, 14, 13, 13, 12, 9, 9, 9, 8, 7, 7, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5,
+                        4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Frecuencia'
+                }
+            }
+        });
+
+        function get_ingredients(cocktail_name) {
+            var ingredient_list = "Ingredientes: \n"
+            for (var i in ingredients[cocktail_name]) {
+                var i_name = ingredients[cocktail_name][i]
+                ingredient_list += i_name + "-" + products[i_name]["Price"] + "$ "
+            }
+            return ingredient_list;
+        }
+
+        function plot_prices(select) {
+
+            var cocktail = select.value;
+            console.log(cocktail)
+            var labels = ['Mínimo', 'Promedio', 'Máximo'],
+                data = [];
+
+            data.push(parseFloat(cocktails[cocktail]["Min"]));
+            data.push(parseFloat(cocktails[cocktail]['Avg']));
+            data.push(parseFloat(cocktails[cocktail]['Max']));
+
+            // Create the chart.js data structure using 'labels' and 'data'
+            var tempData = {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        // fillColor             : "rgba(151,187,205,0.2)",
+                        // strokeColor           : "rgba(151,187,205,1)",
+                        // pointColor            : "rgba(151,187,205,1)",
+                        // pointStrokeColor      : "#fff",
+                        // pointHighlightFill    : "#fff",
+                        // pointHighlightStroke  : "rgba(151,187,205,1)",
+                        data: data
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: cocktail
+                    }
+                }
+            };
+            document.getElementById("precio_total").innerHTML = cocktails[cocktail]["TotalPrice"]
+            document.getElementById("precio_neto").innerHTML = cocktails[cocktail]["NetPrice"]
+            new Chart(document.getElementById("line-chart"), tempData);
+        }
+        duallistbox(document.getElementById('test'));
+
+        function getValues() {
+            document.getElementById('values').innerText = [...document.getElementById('test').selectedOptions].map(o =>
+                o.textContent).join(', ');
+
+            var filtered = {}
+            var selection = [...document.getElementById('test').selectedOptions].map(o => o.textContent)
+
+            for (var key in ingredients) {
+                i = 0;
+                while (i < selection.length) {
+                    j = 0;
+                    while (j < ingredients[key].length) {
+                        if (selection[i] === ingredients[key][j]) {
+                            filtered[key] = ingredients[key];
+                            break;
+                        }
+                        j++;
+                    }
+                    i++;
+                }
+            }
+            all = []
+            some = []
+            for (var key in filtered) {
+                var missing = false;
+                j = 0;
+                while (j < ingredients[key].length) {
+                    found = false;
+                    i = 0;
+                    while (i < selection.length) {
+                        if (selection[i] === ingredients[key][j]) {
+                            found = true;
+                            break;
+                        }
+                        i++;
+                    }
+                    if (!found) {
+                        some.push(key);
+                        missing = true;
+                        break;
+                    }
+                    j++;
+                }
+                if (!missing) {
+                    all.push(key)
+                }
+            }
+            console.log(all);
+            console.log(some);
+            generateAll(all);
+            generateSome(some);
+        }
+        getValues();
+
+        function generateAll(all) {
+            elem = document.getElementById('all');
+            while (elem.hasChildNodes()) {
+                elem.removeChild(elem.lastChild);
+            }
+
+            template = "";
+            for (i = 0; i < all.length; i++) {
+                template += `
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+            <div class="offer-item">
+                <img src="images/cocktails/${all[i]}.jpg" alt="" class="img-responsive">
+                <div>
+                    <a href=${cocktails[all[i]]['Recipe']}>
+                    <h3>${cocktails[all[i]]['Name']}</h3>
+                    <p>
+                        ${ingredients[all[i]].join(', ')}
+                    </p>
+                </div>
+            </div>
+        </div>`
+            }
+
+            elem.insertAdjacentHTML('afterbegin', template);
+        }
+
+        function generateSome(some) {
+            elem = document.getElementById('some');
+            while (elem.hasChildNodes()) {
+                elem.removeChild(elem.lastChild);
+            }
+
+            template = "";
+            for (i = 0; i < some.length; i++) {
+                template += `
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+            <div class="offer-item">
+                <img src="images/cocktails/${some[i]}.jpg" alt="" class="img-responsive">
+                <div>
+                    <a href=${cocktails[some[i]]['Recipe']}>
+                    <h3>${cocktails[some[i]]['Name']}</h3>
+                    <p>
+                        ${ingredients[some[i]].join(', ')}
+                    </p>
+                </div>
+            </div>
+        </div>`
+            }
+
+            elem.insertAdjacentHTML('afterbegin', template);
+        }
+
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
+            data: {
+                labels: ['Vino', 'Ron', 'Ginebra', 'Vodka', 'Aguardiente', 'Cerveza', 'Tequila',
+                    'Whisky', 'Brandy'
+                ],
+                datasets: [{
+                    backgroundColor: ["#9400D3", "#FF1493", "#00BFFF", "#FFD700", "#FF800", "#008000",
+                        "#000080", "#008080", "#B22222"
+                    ],
+                    data: [1, 11, 4, 5, 2, 2, 2, 2, 1]
+                }]
+            },
+            options: {
+                legend: {
+                    display: true
+
+                },
+            }
+        });
+        //cocktails 
+        document.getElementById("Mojito_i").innerHTML = get_ingredients("Mojito")
+        document.getElementById("Cubalibre_i").innerHTML = get_ingredients("Cubalibre")
+        document.getElementById("Daiquiri_i").innerHTML = get_ingredients("Daiquiri")
+        document.getElementById("Pinacolada_i").innerHTML = get_ingredients("Pina Colada")
+        document.getElementById("Sangria_i").innerHTML = get_ingredients("Sangria")
+        document.getElementById("Gintonic_i").innerHTML = get_ingredients("Gintonic")
+        document.getElementById("Caipirinha_i").innerHTML = get_ingredients("Caipirinha")
+        document.getElementById("Cubata_i").innerHTML = get_ingredients("Cubata")
+        document.getElementById("Screwdriver_i").innerHTML = get_ingredients("Screwdriver")
+        document.getElementById("Roncollins_i").innerHTML = get_ingredients("Ron Collins")
+        document.getElementById("Caipiroska_i").innerHTML = get_ingredients("Caipiroska")
+        document.getElementById("Cubanito_i").innerHTML = get_ingredients("Cubanito")
+        document.getElementById("Michelada_i").innerHTML = get_ingredients("Michelada")
+        document.getElementById("Margarita_i").innerHTML = get_ingredients("Margarita")
+        document.getElementById("Bloodymary_i").innerHTML = get_ingredients("Bloody Mary")
+        document.getElementById("Havanaspecial_i").innerHTML = get_ingredients("Havana Special")
+        document.getElementById("Vodcatonic_i").innerHTML = get_ingredients("Vodkatonic")
+        document.getElementById("Tequilasunrise_i").innerHTML = get_ingredients("Tequila Sunrise")
+        document.getElementById("Martini_i").innerHTML = get_ingredients("Martini")
+        document.getElementById("Caipirissima_i").innerHTML = get_ingredients("Caipirissima")
+        document.getElementById("Marypickford_i").innerHTML = get_ingredients("Mary Pickford")
+        document.getElementById("Tomcollins_i").innerHTML = get_ingredients("Tom Collins")
+        document.getElementById("Canchanchara_i").innerHTML = get_ingredients("Canchanchara")
+        document.getElementById("Manhattan_i").innerHTML = get_ingredients("Manhattan")
+        document.getElementById("Negroni_i").innerHTML = get_ingredients("Negroni")
+        document.getElementById("Oldfashioned_i").innerHTML = get_ingredients("Old Fashioned")
+        document.getElementById("Sexonthebeach_i").innerHTML = get_ingredients("Sex On The Beach")
+        document.getElementById("Alexander_i").innerHTML = get_ingredients("Alexander")
+        document.getElementById("Presidente_i").innerHTML = get_ingredients("President")
+        document.getElementById("Chelada_i").innerHTML = get_ingredients("Chelada")
+    </script>
+</body>
+
+</html>
