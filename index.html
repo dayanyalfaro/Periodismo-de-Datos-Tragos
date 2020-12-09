@@ -104,8 +104,8 @@
                         los ingredientes que se tengan a mano. </p>
 
                     <p> Partiendo de la recopilación de los tragos disponibles en más de 50 bares de la provincia
-                        La Habana, se han seleccionado 30, de los que parecen ser los más frecuentes, como se
-                        muestran
+                        La Habana, se han seleccionado 30, de los que parecen ser los más frecuentes, que son los que se
+                        muestran de color azul muestran
                         en la siguiente gráfica. </p>
                 </div>
                 <!-- </div> -->
@@ -723,13 +723,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <p>Teniendo cada ingrediente con su precio es muy sencillo calcular
-                        el costo total de un trago; pero que tal si se quisiera saber el precio
+                        el costo de comprar todos los productos necesarios para la preparación de un trago, a lo cual
+                        nos referiremos como el precio total; pero qué tal si se quisiera saber el precio
                         neto de un trago? Tomando la cantidad necesaria de cada ingrediente y dividiendo
-                        el precio por la parte que esta cantidad significa del todo se tiene este valor.</p>
-                    <p>A continuación se puede escoger un trago y se mostraran los valores de precios totales y netos.
+                        el precio del producto por la parte que esta cantidad significa del todo se tiene este valor.
+                    </p>
+                    <p>A continuación se puede escoger un trago y se mostrarán los valores de precios totales y netos.
                         Además se muestra una gráfica donde se apreacian los valores mínimo, máximo y promedio en los
-                        que
-                        se venden estos tragos en los bares seleccionados.</p>
+                        que se venden estos tragos en los bares seleccionados.</p>
                     <select id="select_cocktail" class="btn" onchange=plot_prices(this)>
                         <option value="">Seleccionar</option>
                         <option value="Mojito" id="1">Mojito</option>
@@ -778,21 +779,25 @@
             <div class="row">
                 <p>La inmensa diferencia dentro del precio neto y el precio promedio en un bar puede causar asombro.
                     Para entender
-                    esto es necesario considerar que el precio no solo depende de los ingredientes, sino tambien de la
+                    esto es necesario considerar que el precio no solo depende de los ingredientes, sino también de la
                     calidad del local,
-                    de si la musica es en vivo o grabada, de la cantidad de bebida que sirvan, de otras disponibilidades
+                    de si la música es en vivo o grabada, de la cantidad de bebida que sirvan, de otras disponibilidades
                     que ofrezcan en el sitio, entre otras cuestiones </p>
             </div>
             <hr>
             <div class="row">
                 <p>El proceso de realizar el presente trabajo comenzó con la recopilación de
                     los datos necesarios para llevar a cabo el estudio. Para esta tarea nos
-                    apoyamos en la información que brinda A la mesa y Conoce Cuba, donde se
+                    apoyamos en la información que brinda <a href="https://www.alamesacuba.com">A la mesa</a> y <a
+                        href="https://conocecuba.com/">Conoce Cuba</a>,
+                    donde se
                     realizó una selección de 57 locales de La Habana que oferten cocteles.
-                    Las recetas usadas son, en su mayoría, tomadas de Ecured pues se considera
+                    Las recetas usadas son, en su mayoría, tomadas de <a href="https://www.ecured.cu">Ecured</a> pues se
+                    considera
                     que ofrece una aproximación más cercana al contexto cubano. Los precios de
                     cada producto requerido para la preparación de los cocteles fueron determinados
-                    haciendo uso de Dónde hay. Luego de recopilar toda esta información se conformó
+                    haciendo uso de la aplicación para móvil Dónde hay. Luego de recopilar toda esta información se
+                    conformó
                     una base de datos sqlite con la misma. Los gráficos mostrados fueron realizados
                     usando la herramienta chart.js</p>
             </div>
@@ -948,7 +953,7 @@
                     },
                     title: {
                         display: true,
-                        text: cocktail
+                        text: cocktails[cocktail]['Name']
                     }
                 }
             };
